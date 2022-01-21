@@ -218,8 +218,12 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 //     console.log(i + 1 + ' ' + mov);
 //   }
 // }
-const accMove = accounts
-  .flatMap(acc => acc.movements)
-  .reduce((acc, curr) => acc + curr, 0);
+// const { deposits, withdrawals } = accounts
+//   .flatMap(acc => acc.movements)
+//   .reduce(
+//     (acc, curr) => (acc[curr > 0 ? 'deposits' : 'withdrawals'] += curr),
 
-console.log(accMove);
+//     { deposits: 0, withdrawals: 0 }
+//   );
+
+// console.log(deposits, withdrawals);
